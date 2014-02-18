@@ -1,0 +1,166 @@
+<html>
+<head>
+  <title>Nate Hindman</title>
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/underscore.js"></script>
+  <script src="javascripts/backbone.js"></script>
+  <script src="javascripts/app.js"></script>
+  <link rel="stylesheet" href="public/stylesheets/base.css">
+  <link rel="stylesheet" href="public/stylesheets/layout.css">
+  <link rel="stylesheet" href="public/stylesheets/skeleton.css">
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">  
+  <div id="main_container">
+    <div class="circles">
+        <div class="one column offset-by-four coding_hover">
+          <div class="coding">
+            <div id="code_language">CODING<img class="code_image" src="public/images/code.png">
+            </div>
+          </div>
+        </div>
+        <div class="three columns offset-by-two">
+          <div class="writing">
+            <div id="writing_language">WRITING<img class="writing_image" src="public/images/writing.png">
+            </div>
+          </div>
+        </div>
+        <div class="three columns offset-by-one">
+          <a href="index.html#hello">
+            <div class="hello"><img class="headshot" src="public/images/headshot.png">
+            </div>
+          </a>
+        </div>
+        <div class="two columns offset-by-one">
+          <div class="filming">
+            <div id="filming_language">FILMING<img class="filming_image" src="public/images/filming.png">
+            </div>
+          </div>
+        </div>
+        <div class="one column offset-by-one">
+          <div class="sharing">
+            <div id="sharing_language">SHARING<img class="sharing_image" src="public/images/sharing.png"></div>
+          </div>
+        </div>
+  </div>
+  </div>
+
+    <div class="text_container">
+    </div> 
+    <div class="content_container">
+    </div>
+</div>
+
+<!-- templates: -->
+<!-- AddThis Pro BEGIN -->
+<!-- <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5302cc1b2e629866"></script> -->
+<!-- AddThis Pro END -->
+<script id="coding_template" type="text/javascript" name="coding">
+  <div class="container nine-columns coding_container">
+    <a href="http://watch-atlas.herokuapp.com/"><img class="atlas" src="public/images/atlas.001.jpg"></a><a href="#" class="button source_code_button1">SOURCE CODE</a>
+    <a href="http://one-day-gym-pass.herokuapp.com/"><img class="one_day" src="public/images/one_day.001.jpg"></a><a href="#" class="button source_code_button2">SOURCE CODE</a>
+  </div>
+</script>
+
+<script id="writing_template" type="text/javascript" name="writing">
+    <div class="six columns">
+
+      <div class="webster_image">
+        <div class="articlefooter">SWAMP SAVIOR<span class="location">Fast Company</span><br>
+        </div>
+      </div>
+
+      <div class="sushi_image">
+        <div class="articlefooter">TECH-SAVVY SUSHI<span class="location">Forbes</span><br>
+        </div>
+      </div>
+
+      <div class="skybox_image">
+        <div class="articlefooter">THE FACEBOOK OF SPACE<span class="location">The Atlantic</span><br>
+        </div>
+      </div>
+
+      <div class="wall_image">
+        <div class="articlefooter">BANKERS TO STARTUPS<span class="location">HuffPost</span><br>
+        </div>
+      </div>
+
+    </div>
+</script>
+
+<script id="writing_text_template" type="text/javascript" name="writing_text_template">
+    <div class="eight columns offset-by-ten stories_container">
+      <div class="webster_text"><p><h4>72-Year-Old Inventor May Be The Last, Best Hope For Sinking Bayou</p></h4>
+
+      <p>When a shrimping boat breaks down in Cut Off, Louisiana, you sort of just leave it there.</p>
+
+      <p>The 6,000 person town, a proudly Cajun community one hour south of New Orleans, is littered with rusted hulls left to rot on the banks of its central canal, monuments to indifference. The swamp-town equivalent of leaving cars up on blocks in the front yard.</p>
+
+      <p>Yet it is here, in a hamlet of struggling fishermen and oil rig roughnecks, that 72-year-old Webster Pierce has tinkered up an invention that just may save the bayou from extinction.</p>
+
+      <p><a href="http://www.fastcompany.com/3013539/leadership-now/this-72-year-old-used-a-washing-machine-motor-to-build-wave-robber-save-the-s" target="_blank">Read more in <i>Fast Company</i>.</a></p>
+    </div>
+  </div>
+  
+    <div class="eight columns offset-by-ten stories_container">
+      <div class="harney_text"><p><h4>Sushi Chef Creates Edible QR Codes To End Fish Fraud In California Restaurants</p></h4>
+      <p>Beneath the deep purple cuts of healthy tuna and the smell of fresh wasabi, there lies a sushi underbelly in America that will make your stomach turn.</p>
+
+    <p>Fish gassed with carbon monoxide to keep it pulsing bright red long after expiration. A dysentery-causing mackerel species—long banned in Japan—criminally plated as “white tuna.” Cauldrons of fish scraps plucked off processing plant floors, boiled into unholy stews of aquatic sinew, and served as upscale maki. Trash, at $15 a roll.</p>
+
+      <p><a href="http://www.forbes.com/sites/groupthink/2013/07/12/first-ever-sushi-tech-combats-disturbing-fish-fraud/">Read more in Forbes.</a></p>
+      </div>
+    </div>
+
+    <div class="eight columns offset-by-ten stories_container">
+      <div class="skybox_text"><p><h4>How 24 Tiny Sattelites Could Change Business Forever</p></h4>
+
+    <p>You'd think it would be tough for a 1,200-foot long oil tanker to get lost in the shuffle, but it happens, especially, say, in the blinding bustle at the Port of Singapore, where half of the world's crude is shipped every year.</p>
+
+    <p>Keeping tabs on the tankers is big money for hedge funds who try to keep up using the ships movements to predict where the price of oil is going. Kenneth Singleton, a Stanford economics professor who studies the oil market, tells of firms flying helicopters overhead to gauge inventories. Some funds, he notes, have gone as far as hiring full-time port observers on the ground to radio back intelligence, an attempt to counteract the nautical practice of ships turning off their tracking sensors to intentionally obscure their location.</p>
+
+    <p><a href="http://finance.yahoo.com/news/24-tiny-satellites-could-change-165657606.html" target="_blank" class="link">Read more in The Atlantic.</a></p>
+      </div>
+    </div>
+
+    <div class="eight columns offset-by-ten stories_container">
+      <div class="wall_text"><p><h4>Bankers Flock To Startups</p></h4>
+
+    <p>Shane Robinson celebrated his Merrill Lynch job offer over lunch and cocktails at a trendy Manhattan restaurant. His bosses toasted him and asked what he planned to do with the $10,000 end-of-internship bonus. Robinson, then 24, in late 2007, said he would probably save it. "Why?" he recalls them asking. "Just go spend it -- you're going to make a lot more."</p>
+
+    <p>As the economy started to spiral downward less than six months later, bonuses dried up, layoffs ensued and the young banker was told by his superiors that he might want to begin looking for other opportunities.</p>
+
+    <p><a href="http://www.huffingtonpost.com/2012/01/13/wall-street-bank-tech-startups_n_1200373.html" target="_blank">Read more in The Huffington Post.</a></p>
+      </div>
+    </div>
+
+</script>
+<script id='hello_template' type="text/javascript" name='hello'>
+  <div class="container">
+    <div class="six columns">
+      <div class="hello_bio">
+        Nate Hindman is a New York-based web developer studying at General Assembly. Previously, he was a reporter and editor at <a href="http://www.huffingtonpost.com/nathaniel-cahners-hindman/">The Huffington Post</a>, where he launched the site's small business section. Nate's written work has appeared in The Wall Street Journal and The Atlantic, among other outlets. In the summer of 2013, <a href="http://minnesotabusiness.com/blog/free-enterprise-tour">he won a grant</a> from the U.S. Chamber of Commerce to drive across America and write about interesting entrepreneurs.
+      </div>
+    </div>
+    <div class="social_media_icons">
+      <a href="https://www.facebook.com/nate.hindman.5" target="_blank"><img class="facebook" src="public/images/facebook.png"></a>
+      <a href="https://twitter.com/NateHindman" target="_blank"><img class="twitter" src="public/images/twitter.png"></a>
+      <a href="http://www.linkedin.com/pub/nathaniel-hindman/24/971/283/" target="_blank"><img class="linkedin" src="public/images/linkedin.png"></a>
+      <a href="https://github.com/nhindman/" target="_blank"><img class="github" src="public/images/github.png"></a>
+    </div>
+  </div>
+</script>
+<script id="filming_template" type="text/javascript">
+</script>
+
+<script id="sharing_template" type="text/javascript">
+<div class="container nine-columns sharing_container">
+  <div class="Rebelmouse">
+        <script type="text/javascript" class="rebelmouse-embed-script" src="https://www.rebelmouse.com/static/js-build/embed/embed.js?site=NateHindman&height=1500&flexible=0&scrollbar_theme=dark&show_rebelnav=1"></script>
+  </div>
+</div>
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+var Router = Backbone.Router.extend({
+    routes: {
+        'hello': 'hello',
+        'coding': 'coding'
+    },
+    hello: function(){
+      var hello_view = new HelloView();
+    }, 
+    coding: function(){
+      var coding_view = new CodingView();
+    }
+});
+
+var HelloView = Backbone.View.extend({
+
+  initialize: function() {
+    this.render();
+  },
+  render: function(){
+    $('.content_container').empty()
+    var html_string = $('#hello_template').html();
+    $('.content_container').append(html_string); 
+  }
+})
+
+var CodingView = Backbone.View.extend({
+  initialize: function() {
+    this.render();
+  },
+  render: function(){
+    $('.content_container').empty()
+    var html_string = $('#coding_template').html();
+    $('.content_container').append(html_string) 
+  }
+})
+
+$(function(){
+
+  new ContentContainer;
+  Backbone.history.start();
+
+});
+
